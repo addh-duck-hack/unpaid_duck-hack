@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  unpaid.duck-hack.cloud:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: unpaid.duck-hack.cloud
+    restart: always
+    ports:
+      - 102:80
+    networks:
+      - npm
+      - unpaid.duck-hack.cloud
+
+networks:
+  unpaid.duck-hack.cloud:
+    name: unpaid.duck-hack.cloud
+    driver: bridge
+  npm:
+    external: true
