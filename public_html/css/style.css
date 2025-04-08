@@ -1,0 +1,70 @@
+/* Este archivo es donde se pueden agregar estilos personalizados para el sitio web unpaind_duck-hack */
+:root {
+    --ColorPrincipal: #03283a;
+    --ColorBlanco: #ffffff;
+    --FondoOscuro: #2c2c2c;
+    --ColorSombras: rgba(0, 0, 0, 0.3);
+    --ColorResalte: #f8af11;
+    --FuentePrincipal: #a7cddd;
+    --FuenteSecundaria: #167fbf;
+    --ColorSecundario: #4abdfc;
+    --ColorResalteHover: #9f6f09;
+    --FondoDegradado: #000000aa;
+    --FuenteDegradado: #a7cddd11;
+    --FondoClaro: #4b4b4b;
+    --ColorPrincipalBack: #04212f;
+    --ColorPrincipalNav: #043147;
+    --ColorSombreBlanca: rgba(200,200,200, 0.1);
+    --FondoIcono: #12233b;
+  
+    /* Fuentes */
+    --FuenteRubik: 'Rubik', sans-serif;
+    --FuenteSpaceGrotesk: 'Space Grotesk', sans-serif;
+  }
+
+  .main-container{
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorBlanco);
+    height: 100vh;
+
+  }
+  .main-container img{
+    width: 30%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+    padding-top: 70px;
+    position: relative;
+    z-index: 1;
+  }
+  .services-container{
+    background-color: var(--FondoOscuro);
+    padding: 10px;
+    text-align: center;
+    margin: 60px 100px 0 100px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px var(--ColorSombras);
+  }
+  .services-container h1 {
+    color: var(--ColorResalte);
+    font-family: var(--FuenteRubik);
+    font-size: 2rem;
+    margin: 0;
+  }
+  .services-container p {
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    color: var(--FuentePrincipal);
+    font-family: var(--FuenteSpaceGrotesk);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main-container img {
+    width: 60%;
+    padding-top: 20px;
+  }
+  .services-container{
+    margin: 50px 50px 0 50px;
+  }
+}
