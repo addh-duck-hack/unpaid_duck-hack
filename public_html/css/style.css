@@ -29,7 +29,7 @@
 
   }
   .main-container img{
-    width: 30%;
+    width: 25%;
     height: auto;
     display: block; 
     margin: 0 auto;
@@ -48,15 +48,21 @@
   .services-container h1 {
     color: var(--ColorResalte);
     font-family: var(--FuenteRubik);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
   }
   .services-container p {
-    font-size: 1.2rem;
-    padding: 5px 20px;
+    font-size: 1.5rem;
+    padding: 20px;
     color: var(--FuentePrincipal);
     font-family: var(--FuenteSpaceGrotesk);
     margin: 0;
+
+  }
+    .services-container i {
+    color: var(--ColorResalte);
+    font-size: 5rem;
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
@@ -66,5 +72,15 @@
   }
   .services-container{
     margin: 50px 50px 0 50px;
+  }
+  .services-container h1 {
+    font-size: 2rem;
+  }
+  .services-container p {
+    font-size: 1.2rem;
+
+  }
+  .services-container i {
+    font-size: 3rem;
   }
 }
