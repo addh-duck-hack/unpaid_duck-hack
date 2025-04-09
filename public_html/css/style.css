@@ -67,11 +67,11 @@
 
 @media (max-width: 768px) {
   .main-container img {
-    width: 60%;
+    width: 40%;
     padding-top: 20px;
   }
   .services-container{
-    margin: 50px 50px 0 50px;
+    margin: 30px 50px 0 50px;
   }
   .services-container h1 {
     font-size: 2rem;
