@@ -9,11 +9,13 @@ services:
     restart: always
     networks:
       - npm
-      - unpaid.duck-hack.cloud
 
 networks:
-  unpaid.duck-hack.cloud:
-    name: unpaid.duck-hack.cloud
-    driver: bridge
+  # Solo la red externa de Nginx Proxy Manager. Antes había además una red
+  # bridge propia (unpaid.duck-hack.cloud) con un solo contenedor: no aportaba nada (todo entra
+  # por NPM) y cada red gasta un rango del pool de IPs de Docker, compartido por
+  # todos los proyectos del servidor; al agotarse, `compose up` falla con "all
+  # predefined address pools have been fully subnetted". Si quedó huérfana tras
+  # el `up -d`, bórrala con `docker network rm unpaid.duck-hack.cloud`.
   npm:
     external: true
